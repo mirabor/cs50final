@@ -1,0 +1,43 @@
+[debug] [2023-11-26T05:22:19.652Z] ----------------------------------------------------------------------
+[debug] [2023-11-26T05:22:19.656Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2023-11-26T05:22:19.656Z] CLI Version:   12.8.1
+[debug] [2023-11-26T05:22:19.656Z] Platform:      darwin
+[debug] [2023-11-26T05:22:19.656Z] Node Version:  v20.9.0
+[debug] [2023-11-26T05:22:19.656Z] Time:          Sun Nov 26 2023 00:22:19 GMT-0500 (Eastern Standard Time)
+[debug] [2023-11-26T05:22:19.656Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-26T05:22:19.714Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-26T05:22:19.715Z] > authorizing via signed-in user (mirayu@college.harvard.edu)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/mirayu/bootcamp/bootcamp-pt2
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-11-26T05:22:22.122Z] Using project from CLI flag: bootcamp-ce748
+[debug] [2023-11-26T05:22:22.124Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bootcamp-ce748 [none]
+[debug] [2023-11-26T05:22:22.563Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bootcamp-ce748 403
+[debug] [2023-11-26T05:22:22.563Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bootcamp-ce748 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-11-26T05:22:22.563Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-11-26T05:22:22.628Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project bootcamp-ce748. Please make sure the project exists and your account has permission to access it.
