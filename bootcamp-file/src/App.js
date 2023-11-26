@@ -11,6 +11,7 @@ class App extends React.Component {
         { front: 'front2', back: 'back2' },
       ],
       editor: true,
+      cardIndex: 0,
     };
   }
 
@@ -27,6 +28,19 @@ class App extends React.Component {
 
   switchMode = () => this.setState({ editor: !this.state.editor });
 
+  goToNextCard = () => {
+    this.setState(prevState => ({
+      cardIndex: Math.min(prevState.cardIndex + 1, prevState.cards.length - 1),
+    }));
+  };
+
+  goToPrevCard = () => {
+    this.setState(prevState => ({
+      cardIndex: Math.max(prevState.cardIndex - 1, 0),
+    }));
+  };
+
+
   render() {
     if (this.state.editor) {
       return (
@@ -38,7 +52,16 @@ class App extends React.Component {
         />
       );
     } else {
-      return <CardViewer switchMode={this.switchMode} />;
+      return (
+      <CardViewer
+      cardIndex={this.state.cardIndex}
+      totalCards={this.state.cards.length}
+      currentCard={this.state.cards[cardIndex]}
+      switchMode={this.switchMode}
+      goToNextCard={this.goToNextCard}
+      goToPrevCard={this.goToPrevCard}
+    />
+      );
     }
   }
 }
