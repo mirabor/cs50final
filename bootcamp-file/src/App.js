@@ -16,14 +16,25 @@ class App extends React.Component {
   }
 
   addCard = card => {
-    const cards = this.state.cards.slice().concat(card);
-    this.setState({ cards });
+    if (card.front.trim() !== '' && card.back.trim() !== '') {
+      const cards = this.state.cards.slice().concat(card);
+      this.setState({ cards });
+    }
   };
 
   deleteCard = index => {
     const cards = this.state.cards.slice();
     cards.splice(index, 1);
-    this.setState({ cards });
+
+    if (cards.length === 0) {
+      // Prevent removing all cards
+      cards.push({ front: 'Default Front', back: 'Default Back' });
+    }
+
+    this.setState(prevState => ({
+      cards,
+      cardIndex: Math.min(prevState.cardIndex, cards.length - 1),
+    }));
   };
 
   switchMode = () => this.setState({ editor: !this.state.editor });
@@ -56,7 +67,7 @@ class App extends React.Component {
       <CardViewer
       cardIndex={this.state.cardIndex}
       totalCards={this.state.cards.length}
-      currentCard={this.state.cards[cardIndex]}
+      currentCard={this.state.cards[this.state.cardIndex]}
       switchMode={this.switchMode}
       goToNextCard={this.goToNextCard}
       goToPrevCard={this.goToPrevCard}

@@ -1,13 +1,13 @@
-[debug] [2023-11-26T05:22:19.652Z] ----------------------------------------------------------------------
-[debug] [2023-11-26T05:22:19.656Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
-[debug] [2023-11-26T05:22:19.656Z] CLI Version:   12.8.1
-[debug] [2023-11-26T05:22:19.656Z] Platform:      darwin
-[debug] [2023-11-26T05:22:19.656Z] Node Version:  v20.9.0
-[debug] [2023-11-26T05:22:19.656Z] Time:          Sun Nov 26 2023 00:22:19 GMT-0500 (Eastern Standard Time)
-[debug] [2023-11-26T05:22:19.656Z] ----------------------------------------------------------------------
+[debug] [2023-11-27T01:09:39.988Z] ----------------------------------------------------------------------
+[debug] [2023-11-27T01:09:39.990Z] Command:       /Users/mirayu/.nvm/versions/node/v16.20.2/bin/node /usr/local/bin/firebase init
+[debug] [2023-11-27T01:09:39.991Z] CLI Version:   12.8.1
+[debug] [2023-11-27T01:09:39.991Z] Platform:      darwin
+[debug] [2023-11-27T01:09:39.991Z] Node Version:  v16.20.2
+[debug] [2023-11-27T01:09:39.992Z] Time:          Sun Nov 26 2023 20:09:39 GMT-0500 (Eastern Standard Time)
+[debug] [2023-11-27T01:09:39.993Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2023-11-26T05:22:19.714Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-11-26T05:22:19.715Z] > authorizing via signed-in user (mirayu@college.harvard.edu)
+[debug] [2023-11-27T01:09:40.055Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-27T01:09:40.055Z] > authorizing via signed-in user (mirayu@college.harvard.edu)
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -17,7 +17,7 @@
 
 You're about to initialize a Firebase project in this directory:
 
-  /Users/mirayu/bootcamp/bootcamp-pt2
+  /Users/mirayu/bootcamp/bootcamp-file
 
 Before we get started, keep in mind:
 
@@ -30,14 +30,109 @@ Before we get started, keep in mind:
 [info] You can create multiple project aliases by running firebase use --add, 
 [info] but for now we'll just set up a default project.
 [info] 
-[debug] [2023-11-26T05:22:22.122Z] Using project from CLI flag: bootcamp-ce748
-[debug] [2023-11-26T05:22:22.124Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bootcamp-ce748 [none]
-[debug] [2023-11-26T05:22:22.563Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bootcamp-ce748 403
-[debug] [2023-11-26T05:22:22.563Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bootcamp-ce748 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
-[debug] [2023-11-26T05:22:22.563Z] HTTP Error: 403, The caller does not have permission
-[debug] [2023-11-26T05:22:22.628Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+[debug] [2023-11-27T01:09:47.115Z] Using project from CLI flag: bootcamp-ce748
+[debug] [2023-11-27T01:09:47.117Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bootcamp-ce748 [none]
+[debug] [2023-11-27T01:09:47.368Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bootcamp-ce748 403
+[debug] [2023-11-27T01:09:47.368Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bootcamp-ce748 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-11-27T01:09:47.369Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-11-27T01:09:47.513Z] FirebaseError: HTTP Error: 403, The caller does not have permission
     at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
     at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:285:77)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project bootcamp-ce748. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-11-27T01:12:49.452Z] ----------------------------------------------------------------------
+[debug] [2023-11-27T01:12:49.454Z] Command:       /Users/mirayu/.nvm/versions/node/v16.20.2/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-11-27T01:12:49.454Z] CLI Version:   12.8.1
+[debug] [2023-11-27T01:12:49.455Z] Platform:      darwin
+[debug] [2023-11-27T01:12:49.455Z] Node Version:  v16.20.2
+[debug] [2023-11-27T01:12:49.456Z] Time:          Sun Nov 26 2023 20:12:49 GMT-0500 (Eastern Standard Time)
+[debug] [2023-11-27T01:12:49.456Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-27T01:12:49.523Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-27T01:12:49.524Z] > authorizing via signed-in user (mirayu@college.harvard.edu)
+[debug] [2023-11-27T01:12:49.524Z] [iam] checking project bootcamp-ce748 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-27T01:12:49.526Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootcamp-ce748:testIamPermissions [none]
+[debug] [2023-11-27T01:12:49.526Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootcamp-ce748:testIamPermissions x-goog-quota-user=projects/bootcamp-ce748
+[debug] [2023-11-27T01:12:49.527Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootcamp-ce748:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-27T01:12:49.751Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootcamp-ce748:testIamPermissions 200
+[debug] [2023-11-27T01:12:49.751Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootcamp-ce748:testIamPermissions {}
+[debug] [2023-11-27T01:12:49.751Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project bootcamp-ce748:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-11-27T01:12:49.752Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bootcamp-ce748 [none]
+[debug] [2023-11-27T01:12:50.060Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bootcamp-ce748 403
+[debug] [2023-11-27T01:12:50.060Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bootcamp-ce748 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-11-27T01:12:50.061Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-11-27T01:12:50.118Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project bootcamp-ce748. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-11-27T01:58:50.371Z] ----------------------------------------------------------------------
+[debug] [2023-11-27T01:58:50.374Z] Command:       /Users/mirayu/.nvm/versions/node/v16.20.2/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-11-27T01:58:50.374Z] CLI Version:   12.8.1
+[debug] [2023-11-27T01:58:50.375Z] Platform:      darwin
+[debug] [2023-11-27T01:58:50.375Z] Node Version:  v16.20.2
+[debug] [2023-11-27T01:58:50.377Z] Time:          Sun Nov 26 2023 20:58:50 GMT-0500 (Eastern Standard Time)
+[debug] [2023-11-27T01:58:50.377Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-27T01:58:50.442Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-27T01:58:50.443Z] > authorizing via signed-in user (mirayu@college.harvard.edu)
+[debug] [2023-11-27T01:58:50.443Z] [iam] checking project bootcamp-ce748 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-27T01:58:50.445Z] > refreshing access token with scopes: []
+[debug] [2023-11-27T01:58:50.447Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-11-27T01:58:50.447Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-27T01:58:50.840Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-11-27T01:58:50.840Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-27T01:58:50.858Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootcamp-ce748:testIamPermissions [none]
+[debug] [2023-11-27T01:58:50.858Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootcamp-ce748:testIamPermissions x-goog-quota-user=projects/bootcamp-ce748
+[debug] [2023-11-27T01:58:50.858Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootcamp-ce748:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-27T01:58:51.307Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootcamp-ce748:testIamPermissions 200
+[debug] [2023-11-27T01:58:51.307Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootcamp-ce748:testIamPermissions {}
+[debug] [2023-11-27T01:58:51.307Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project bootcamp-ce748:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-11-27T01:58:51.308Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bootcamp-ce748 [none]
+[debug] [2023-11-27T01:58:51.625Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bootcamp-ce748 403
+[debug] [2023-11-27T01:58:51.625Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bootcamp-ce748 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-11-27T01:58:51.626Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-11-27T01:58:51.685Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project bootcamp-ce748. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-11-27T02:00:54.977Z] ----------------------------------------------------------------------
+[debug] [2023-11-27T02:00:54.979Z] Command:       /Users/mirayu/.nvm/versions/node/v16.20.2/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-11-27T02:00:54.980Z] CLI Version:   12.8.1
+[debug] [2023-11-27T02:00:54.980Z] Platform:      darwin
+[debug] [2023-11-27T02:00:54.980Z] Node Version:  v16.20.2
+[debug] [2023-11-27T02:00:54.981Z] Time:          Sun Nov 26 2023 21:00:54 GMT-0500 (Eastern Standard Time)
+[debug] [2023-11-27T02:00:54.981Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-27T02:00:55.052Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-27T02:00:55.053Z] > authorizing via signed-in user (mirayu@college.harvard.edu)
+[debug] [2023-11-27T02:00:55.053Z] [iam] checking project bootcamp-ce748 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-27T02:00:55.055Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootcamp-ce748:testIamPermissions [none]
+[debug] [2023-11-27T02:00:55.055Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootcamp-ce748:testIamPermissions x-goog-quota-user=projects/bootcamp-ce748
+[debug] [2023-11-27T02:00:55.056Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootcamp-ce748:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-27T02:00:55.344Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootcamp-ce748:testIamPermissions 200
+[debug] [2023-11-27T02:00:55.345Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootcamp-ce748:testIamPermissions {}
+[debug] [2023-11-27T02:00:55.345Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project bootcamp-ce748:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-11-27T02:00:55.346Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bootcamp-ce748 [none]
+[debug] [2023-11-27T02:00:55.615Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bootcamp-ce748 403
+[debug] [2023-11-27T02:00:55.615Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bootcamp-ce748 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-11-27T02:00:55.616Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-11-27T02:00:55.889Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
 [error] 
 [error] Error: Failed to get Firebase project bootcamp-ce748. Please make sure the project exists and your account has permission to access it.
