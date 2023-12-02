@@ -1,6 +1,7 @@
 import os
 import datetime
 import re
+import cs50
 
 from cs50 import SQL
 from flask import Flask, flash, redirect, render_template, request, session
@@ -21,7 +22,7 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 # Configure CS50 Library to use SQLite database
-db = SQL("sqlite:///finance.db")
+db = cs50.SQL("sqlite:///finance.db")
 
 
 @app.after_request
